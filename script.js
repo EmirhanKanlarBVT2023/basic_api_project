@@ -1,4 +1,4 @@
-const apiKey = "6cGLbRyoUnb5ibT7adQCgxd5GiEM6TEkPmmPSPfg";
+const apiKey = "";
 
 async function fetchPhotos() {
   const rover = document.getElementById("rover").value;
