@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA Mars Rover Photos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>NASA Mars Rover Photos</h2>
+    <div>
+      <label for="rover">Rover:</label>
+      <select id="rover">
+        <option value="curiosity">Curiosity</option>
+        <option value="opportunity">Opportunity</option>
+        <option value="spirit">Spirit</option>
+      </select>
+
+      <label for="camera">Camera:</label>
+      <select id="camera">
+        <option value="fhaz">Front Hazard Avoidance Camera</option>
+        <option value="rhaz">Rear Hazard Avoidance Camera</option>
+        <option value="mast">Mast Camera</option>
+      </select>
+
+      <label for="sol">Martian Sol (0-1000):</label>
+      <input type="number" id="sol" value="1000" min="0" max="1000" />
+
+      <button id="fetchPhotos">Fetch Photos</button>
+    </div>
+    <div id="photos"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
